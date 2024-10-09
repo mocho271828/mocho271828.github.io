@@ -24,12 +24,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "20"
           cache: 'npm'
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
+          node-version: "20"
           static_site_generator: next
 
       - name: Restore cache
