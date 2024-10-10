@@ -14,6 +14,22 @@ export const pageview = (path: string) => {
   })
 }
 
+// イベントを型で管理
+type ContactEvent = {
+  action: 'submit_form'
+  category: 'contact'
+}
+
+type ClickEvent = {
+  action: 'click'
+  category: 'other'
+}
+
+export type Event = (ContactEvent | ClickEvent) & {
+  label?: Record<string, string | number | boolean>
+  value?: string
+}
+
 // GAイベントを発火させる
 export const event = ({ action, category, label, value = '' }: Event) => {
   if (!existsGaId) {
@@ -52,9 +68,13 @@ export const GoogleAnalytics = () => (
   <>
     {existsGaId && (
       <>
-        <Script defer src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script
-          defer
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="ga-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -63,25 +83,8 @@ export const GoogleAnalytics = () => (
               gtag('config', '${GA_ID}');
             `,
           }}
-          strategy="afterInteractive"
         />
       </>
     )}
   </>
 )
-
-// イベントを型で管理
-type ContactEvent = {
-  action: 'submit_form'
-  category: 'contact'
-}
-
-type ClickEvent = {
-  action: 'click'
-  category: 'other'
-}
-
-export type Event = (ContactEvent | ClickEvent) & {
-  label?: Record<string, string | number | boolean>
-  value?: string
-}
