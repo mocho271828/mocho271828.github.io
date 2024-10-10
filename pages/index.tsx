@@ -25,7 +25,7 @@ export default function Home() {
                   <Image src="/twitter.jpg" alt="Twitter" width={30} height={30} />
                 </a>
                 <a href="https://instagram.com/mocho_tsuchi" aria-label="instagram">
-                  <Image src="/instagram_icon.jpg" alt="Instagram" width={30} height={30} />
+                  <Image src="/Instagram_icon.jpg" alt="Instagram" width={30} height={30} />
                 </a>
               </div>
             </div>
