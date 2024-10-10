@@ -40,7 +40,7 @@ export default function Home() {
             <li>Residence: Toyama City, Toyama Prefecture, Japan</li>
             <li>Interests: Mathematics, Astronomic physics, and computer science</li>
             <li>Personal Motto: &quot;不敢為天下先&quot; (Do not dare to be ahead of the world) - Lao Tzu</li>
-            <li>Interest: Reading Etchu-Manyoshu; Japanese clasic poetry collection. In toyama prefecture, there are many place related this.</li>
+            <li>Interest: Habit: Reading Etchu Man'yoshu, a classic Japanese poetry collection. Many places in Toyama Prefecture are related to this work.</li>
           </div>
         </section>
 
