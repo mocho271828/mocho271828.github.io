@@ -2,15 +2,6 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGH5Y6LNG9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LGH5Y6LNG9');
-    </script>
     <div className="max-w-4xl px-4 mx-auto my-10 xl:max-w-5xl xl:px-0 sm:px-6 bg-black text-white">
       <main>
         {/* Profile Section */}
