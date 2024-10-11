@@ -69,7 +69,7 @@ export default function Home() {
           <ul className="list-disc list-inside text-white">
             <li>Algebraic geometry (mathematics)</li>
             <li>Nuclear and particle theory (physics)</li>
-            <li>Exploring Etchu Manyoshu sites</li>
+            <li>Exploring Etchu Man&apos;yoshu sites</li>
             <li>Business process optimization</li>
           </ul>
         </section>
