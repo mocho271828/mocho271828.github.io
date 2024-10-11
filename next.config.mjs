@@ -1,10 +1,9 @@
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  basePath: '/mocho271828.github.io',
-}
+  // Remove the experimental section if you're not using any experimental features
+};
 
-export default nextConfig
+export default nextConfig;
