@@ -3,7 +3,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  optimizeCss: true,
   output: 'export',
   basePath: '/mocho271828.github.io',
 }
