@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { useEffect } from 'react'
 import { GA_ID, existsGaId, pageview } from '../lib/gtag'
 
-export const usePageView = () => {
+export const usePageView = (): void => {
   const router = useRouter()
 
   useEffect(() => {
@@ -11,18 +11,19 @@ export const usePageView = () => {
       return
     }
 
-    const handleRouteChange = (path: string) => {
+    const handleRouteChange = (path: string): void => {
       pageview(path)
     }
 
     router.events.on('routeChangeComplete', handleRouteChange)
+
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
 }
 
-export const GoogleAnalytics = () => (
+export const GoogleAnalytics = (): JSX.Element => (
   <>
     {existsGaId && (
       <>
