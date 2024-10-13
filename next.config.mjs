@@ -1,11 +1,13 @@
 const nextConfig = {
+  output: "export",
+}
   reactStrictMode: true,
-  swcMinify: true,
-  experimental: {
-    images: {
-      unoptimized: true,
-    },
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
+  basePath: '/mocho271828.github.io',
 };
 
+export default nextConfig
 export default nextConfig;
