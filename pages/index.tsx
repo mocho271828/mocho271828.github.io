@@ -53,7 +53,7 @@ export default function Home() {
 
         {/* Academic Pursuits Section */}
         <section className="mb-10 pb-4 border-b-2 text-white">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Other infomation of me</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Other Infomation of Me</h2>
           <ul className="list-disc list-inside text-white">
             <li>Representative of Mathle, a self-study seminar circle at the University of Toyama</li>
             <li>Conducting research under faculty supervision since university entrance</li>
