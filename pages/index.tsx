@@ -83,6 +83,7 @@ export default function Home() {
             <Image src="/css3-512.jpg" alt="CSS" width={50} height={50} className="m-2" />
             <Image src="/haskell.jpg" alt="Haskell" width={50} height={50} className="m-2" />
             <Image src="/sage.jpg" alt="SageMath" width={50} height={50} className="m-2" />
+            <Image src="/Typescript.jpg" alt="TypeScript" width={50} height={50} className="m-2" />
           </div>
         </section>
       </main>
