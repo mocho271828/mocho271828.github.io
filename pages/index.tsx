@@ -38,7 +38,6 @@ export default function Home() {
           <div className="space-y-4 text-white">
             <li>Born: October, 2005 in Gifu Prefecture, Japan</li>
             <li>Residence: Toyama City, Toyama Prefecture, Japan</li>
-            <li>Interests: Mathematics, Astronomic physics, and computer science</li>
             <li>Personal Motto: &quot;不敢為天下先&quot; - Lao Tzu</li>
             <li>Habit: Reading Etchu Manyoshu, a classic Japanese poetry collection. Many places in Toyama Prefecture are related to this work.</li>
           </div>
@@ -54,7 +53,7 @@ export default function Home() {
 
         {/* Academic Pursuits Section */}
         <section className="mb-10 pb-4 border-b-2 text-white">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Academic Pursuits</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Other infomation of me</h2>
           <ul className="list-disc list-inside text-white">
             <li>Representative of Mathle, a self-study seminar circle at the University of Toyama</li>
             <li>Conducting research under faculty supervision since university entrance</li>
