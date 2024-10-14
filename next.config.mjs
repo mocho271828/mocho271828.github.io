@@ -1,12 +1,17 @@
-/**
- * @type {import('next').NextConfig}
- */
+import remarkGfm from 'remark-gfm'
+import createMDX from '@next/mdx'
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-　 output: "export",
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  output: 'export',
 }
 
-export default nextConfig
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [],
+  },
+})
 
-module.exports = {
-  output: 'export',
-};
+export default withMDX(nextConfig)
