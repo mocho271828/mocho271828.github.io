@@ -90,7 +90,7 @@ export default function Home() {
         <section className="mb-10 pb-4 border-b-2 text-white">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Contact</h2>
           <ul className="list-disc list-inside text-white">
-            <p className="text-lg text-gray-700">s2440829{at}.ems.u-toyama.ac.jp</p>
+            <p className="text-lg text-gray-700">s2440829(at).ems.u-toyama.ac.jp</p>
           </ul>
         </section>
       </main>
