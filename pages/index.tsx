@@ -68,8 +68,7 @@ export default function Home() {
           <ul className="list-disc list-inside text-white">
             <li>Algebraic geometry (mathematics)</li>
             <li>Nuclear and particle theory (physics)</li>
-            <li>Exploring Etchu Man&apos;yoshu sites</li>
-            <li>Business process optimization</li>
+            <li>Computer Science</li>
           </ul>
         </section>
 
@@ -85,6 +84,14 @@ export default function Home() {
             <Image src="/sage.jpg" alt="SageMath" width={50} height={50} className="m-2" />
             <Image src="/Typescript.jpg" alt="TypeScript" width={50} height={50} className="m-2" />
           </div>
+        </section>
+        
+        {/* Contact Section */}
+        <section className="mb-10 pb-4 border-b-2 text-white">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Contact</h2>
+          <ul className="list-disc list-inside text-white">
+            <p className="text-lg text-gray-700">s2440829{at}.ems.u-toyama.ac.jp</p>
+          </ul>
         </section>
       </main>
     </div>
