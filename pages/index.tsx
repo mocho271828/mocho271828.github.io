@@ -39,8 +39,8 @@ export default function Home() {
             <li>Born: October, 2005 in Gifu Prefecture, Japan</li>
             <li>Residence: Toyama City, Toyama Prefecture, Japan</li>
             <li>Interests: Mathematics, Astronomic physics, and computer science</li>
-            <li>Personal Motto: &quot;不敢為天下先&quot; (Do not dare to be ahead of the world) - Lao Tzu</li>
-            <li>Interest: Habit: Reading Etchu Manyoshu, a classic Japanese poetry collection. Many places in Toyama Prefecture are related to this work.</li>
+            <li>Personal Motto: &quot;不敢為天下先&quot; - Lao Tzu</li>
+            <li>Habit: Reading Etchu Manyoshu, a classic Japanese poetry collection. Many places in Toyama Prefecture are related to this work.</li>
           </div>
         </section>
 
