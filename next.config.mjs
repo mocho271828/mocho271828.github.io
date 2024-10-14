@@ -1,17 +1,15 @@
-import remarkGfm from 'remark-gfm'
-import createMDX from '@next/mdx'
-
+/**
+ * @type {import('next').NextConfig}
+ */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  reactStrictMode: true,
   output: 'export',
-}
-
-const withMDX = createMDX({
-  options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
+  images: {
+    unoptimized: true,
   },
-})
+  // basePath を設定（リポジトリ名がプロジェクト名と同じ場合）
+  basePath: '/mocho271828.github.io',
+};
 
-export default withMDX(nextConfig)
+export default nextConfig;
