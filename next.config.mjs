@@ -1,9 +1,12 @@
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  // Remove the experimental section if you're not using any experimental features
-};
++ output: "export",
+}
 
-export default nextConfig;
+export default nextConfig
+
+module.exports = {
+  output: 'export',
+};

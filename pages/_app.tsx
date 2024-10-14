@@ -1,14 +1,6 @@
-import type { AppProps } from 'next/app'
-import { GoogleAnalytics, usePageView } from '../src/components/GoogleAnalytics'
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  usePageView()
-  return (
-    <>
-      <GoogleAnalytics />
-      <Component {...pageProps} />
-    </>
-  )
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
 }
-
-export default MyApp
