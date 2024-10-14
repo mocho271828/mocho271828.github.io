@@ -1,10 +1,27 @@
-import React from 'react'
+import { useRouter } from "next/router";
+import React, { useEffect } from 'react'
 
-import usePageView from '../src/hooks/usePageView'
+import { existsGaId, pageview } from '../src/lib/gtag'
 import GoogleAnalytics from '../src/components/GoogleAnalytics'
 
 const App = ({ Component, pageProps }) => {
-  usePageView() // 追加
+  const router = useRouter()
+
+  useEffect(() => {
+    if (!existsGaId) {
+      return
+    }
+
+    const handleRouteChange = (path) => {
+      pageview(path)
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
   return (
     <>
