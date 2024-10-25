@@ -27,6 +27,9 @@ export default function Home() {
                 <a href="https://instagram.com/mocho_tsuchi" aria-label="instagram">
                   <Image src="/Instagram_icon.jpg" alt="Instagram" width={30} height={30} />
                 </a>
+                <a href="https://bsky.app/profile/mocho-tsuchi.bsky.social" aria-label="Bluesky">
+                  <Image src="/Bluesky_Logo.jpg" alt="Bluesky" width={30} height={30} />
+                </a>
               </div>
             </div>
           </div>
