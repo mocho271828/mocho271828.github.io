@@ -59,7 +59,6 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-8">Other Infomation of Me</h2>
           <ul className="list-disc list-inside text-white">
             <li>Representative of Mathle, a self-study seminar circle at the University of Toyama</li>
-            <li>Member of the University of Toyama Astronomy Club</li>
             <li>Student member of the Physical Society of Japan (Cosmic Ray and Astrophysics, Theory, Particle Theory, and Particle Experiment divisions)</li>
           </ul>
         </section>
