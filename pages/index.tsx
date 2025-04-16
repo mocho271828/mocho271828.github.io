@@ -16,7 +16,7 @@ export default function Home() {
             />
             <div className="text-center md:text-left">
               <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Kota Tsuchimoto</h1>
-              <p className="text-lg text-gray-700">First-year student, Faculty of Science, University of Toyama</p>
+              <p className="text-lg text-gray-700">Faculty of Science, University of Toyama</p>
               <div className="flex justify-center md:justify-start mt-4 space-x-4">
                 <a href="https://github.com/mocho271828" aria-label="github">
                   <Image src="/github-mark.svg" alt="GitHub" width={30} height={30} />
